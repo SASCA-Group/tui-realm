@@ -8,6 +8,8 @@ use serde::{Deserialize, Serialize};
 
 // -- event
 
+pub use crate::core::subscription::MouseEventClause;
+
 /// An event raised by a user interaction
 #[derive(Debug, Eq, PartialEq, Clone, PartialOrd)]
 pub enum Event<UserEvent>
