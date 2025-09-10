@@ -101,7 +101,7 @@ where
 
 /// A event clause for [`MouseEvent`]s
 #[derive(Debug, PartialEq, Eq)]
-pub struct MouseEventClause {
+pub(crate) struct MouseEventClause {
     /// The kind of mouse event that was caused
     pub kind: MouseEventKind,
     /// The key modifiers active when the event occurred
